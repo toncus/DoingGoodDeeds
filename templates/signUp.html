@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>THE GOOD LIFE!</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../static/style/ustyles.css">
+  
+</head>
+<body>      
+  <!–– Top Banner section  -->
+  <nav class="good-life__header">
+    <h2>#THEGOODLIFE = GOOD PEOPLE DOING GOOD DEEDS/THINGS FOR THE GOOD OF ALL</h2>
+  </nav>
+          </div class="cfloats">
+      <div class="bbox">
+          <img class="img-fluid" src="{{usfiles[1]}}" alt="Journey" style="float: left; height: 750px;">
+
+      </div>
+      <div class="bbox">
+          <img class="img-fluid" src="{{usfiles[2]}}" alt="Journey" style="float: left; height: 375px;"> 
+          <img class="img-fluid" src="{{usfiles[3]}}" alt="Journey" style="float: left; height: 375px;">
+      </div>      
+      <div class="bbox">
+          <form id="formsignup" name="myFSign" method="POST" action="/mydata" style="color:navy; border:10px solid navy; width: 600px; height: 750px">
+              <div  class="container">
+                  <h1>Sign Up !</h1>
+                  <h3>Want news about future deploys</br> and join a team of AWESOME people?</h3>
+                  <p>Please fill in this form to create an account.</p>
+
+
+                      <label for="FName"><b>Your First Name</b></label></br>
+                      <input type="text" placeholder="Enter Your First Name" name="fname" required></br>
+
+                      <label for="LName"><b>Your Last Name</b></label></br>
+                      <input type="text" placeholder="Enter Your Last Name" name="lname" required></br>
+                  
+                      <label for="email"><b>Email</b></label></br>
+                      <input type="text" placeholder="Enter Email" name="email" required></br>
+                  
+                      <label for="psw"><b>Password</b></label></br>
+                      <input type="password" placeholder="Enter Password" name="psw" required></br>
+                  
+                      <label for="psw-repeat"><b>Repeat Password</b></label></br>
+                      <input type="password" placeholder="Repeat Password" name="pswrepeat" required></br>
+
+                      <input type="text" id="DOEntry" name="doe" hidden>
+                 
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                      </label>
+          
+                  <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>  
+
+            </div>      
+              <div class="bbox" class="cfloats">
+                <center>
+                  <input type="reset"  id="cancelbtn" value="Cancel/Clear"></input>
+                  <input type="submit" id="signupbtn" value="Sign Up"></input>
+                </center>
+              </div>    
+          </form>
+      </div>
+                  <div class="cfloats" style="float: right; margin-right: 100px;">
+                        <a href="/" class="btn btn-primary btn-lg" role="button">Home</a>
+                        <a class="btn btn-primary btn-lg" role="button" onclick="fillTheForm()">Fill the form</a>
+                        <a class="btn btn-primary btn-lg" role="button" onclick="window.location='http://127.0.0.1:5000/gdmaillist'">GDMail List</a>
+                        <a class="btn btn-primary btn-lg" role="button" onclick="topFunction()" title="Go to top">Top</a>
+                  </div>
+      </div>
+
+        
+
+
+        <div id="footer" class="bg-info text-black" style="margin-left: 25";>
+             <div class="footer__content">
+                <div>
+                  <p>Copyright <span id="current-date"></span></p>
+                </div>
+                <div>
+                  <p>For more information please contact: Tony Cusumano at <a href="mailto:toncus2000@gmail.com">tocus2000@gmail.com</a></p>
+                </div>
+             </div>
+
+           </div>
+          </div>
+         <script src="../static/scripts/jquery-3.3.1.min.js"></script>
+         <script src="../static/scripts/bootstrap.min.js"></script>
+         <script src="../static/scripts/app.js"></script>
+
+      </body>
+</html>

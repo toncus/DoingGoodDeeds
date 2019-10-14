@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>THE GOOD LIFE!</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../static/style/ustyles.css">
+  <link rel="stylesheet" type="text/css" href="../static/style/styles.css">
+</head>
+<body>      
+  <!–– Top Banner section  -->
+  <nav class="good-life__header">
+    <h2>#THEGOODLIFE = GOOD PEOPLE DOING GOOD DEEDS/THINGS FOR THE GOOD OF ALL</h2>
+  </nav>
+
+<!–– Container  -->
+
+<div class="container-fluid">
+
+<!–– Row -->
+      <div>  
+            <center><img class="img-fluid" src="{{usfiles[0]}}" alt="Did I offer"></center>
+      </div>
+      
+      <div>
+      <center><a href="/" class="btn btn-primary btn-lg" role="button">Home</a><a href="/cert" class="btn btn-primary btn-lg" role="button">Cert of Awesomeness</a><button class="btn btn-primary btn-lg" onclick ='callPrint("hiddencert")'>Print The Cert</button><a href="{{usfiles[0]}}" download><button class="btn btn-primary btn-lg" >Download The Cert</button></a><a href="/speech" class="btn btn-primary btn-lg" role="button">The Speech</a><a href="/poem1" class="btn btn-primary btn-lg" role="button">Poems</a><a href="/t2wolves" class="btn btn-primary btn-lg" role="button">Stories</a></center>
+      </div><iframe id="hiddencert" src="{{usfiles[1]}}"></iframe>
+</div>     
+   
+        <script src="../static/scripts/jquery-3.3.1.min.js"></script>
+        <script src="../static/scripts/bootstrap.min.js"></script>
+        <script src="../static/scripts/app.js"></script>
+      
+
+</body>      
