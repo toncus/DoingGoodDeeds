@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 appnope==0.1.0
 click==6.7
 decorator==4.1.2
@@ -52,4 +51,4 @@ traitlets==4.3.2
 wcwidth==0.1.7
 Werkzeug==0.12.2
 gunicorn==19.7.1
->>>>>>> 084fb63c8f1478afb52f30b2b586cf65cecde544
+
