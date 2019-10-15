@@ -11,8 +11,6 @@ Jinja2==2.10.1
 MarkupSafe==1.1.1
 numpy==1.17.2
 parso==0.1.0
-Flask==1.0.2
-Flask-PyMongo==0.5.2
 passlib==1.7.1
 pexpect==4.3.0
 pickleshare==0.7.4
