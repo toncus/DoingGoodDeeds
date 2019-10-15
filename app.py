@@ -68,7 +68,7 @@ def mydata():
         goodeed=GoodDeedsSignUp(fname=fname, lname=lname, myemail=myemail, password1=password1, password2=password2, mydate=mydate)
         db.session.add(goodeed)
         db.session.commit()
-        return redirect('signUp.html', code=302)
+        return redirect('https://doinggoodness.herokuapp.com/su', code=302)
 
 @app.route("/mission", methods=['GET', 'POST'])
 def mission():
