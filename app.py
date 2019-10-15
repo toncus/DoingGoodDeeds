@@ -1,6 +1,8 @@
 import os
 import numpy as np
+import pymongo
 from datetime import datetime as dt
+from datetime import timedelta as dtd
 from flask import (
     Flask, 
     render_template, 
@@ -8,7 +10,7 @@ from flask import (
     request, 
     redirect,
     url_for)
-from flask_sqlalchemy import SQLAlchemy
+from flask_pymongo import PyMongo
 
 #################################################
 # Flask Setup
@@ -19,11 +21,9 @@ app = Flask(__name__)
 # Database Setup
 #################################################
 
-from flask_sqlalchemy import SQLAlchemy
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db/gooddeeds.sqlite'
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
-
-db = SQLAlchemy(app)
+app.config["MONGO_DBNAME"] ="gooddeeds"
+app.config["MONGO_URI"] = "mongodb://toncus2000:goodeeds5491@ds059205.mlab.com:59205/gooddeeds"
+mongo = PyMongo(app)
 today=dt.today()
 mydate=""
 
