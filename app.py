@@ -34,7 +34,7 @@ def index():
 @app.route('/mydata', methods=['GET', 'POST'])
 def mydata():
     if request.method == 'POST':
-        today=dt.today() #randomgiberash
+        today=dt.today()-dtd(hours=4) #randomgiberash
         fname=request.form['fname'];
         lname=request.form['lname'];
         myemail=request.form['email'];
