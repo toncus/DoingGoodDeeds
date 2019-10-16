@@ -1,6 +1,8 @@
 import os
 import numpy as np
+import pymongo
 from datetime import datetime as dt
+from datetime import timedelta as dtd
 from flask import (
     Flask, 
     render_template, 
@@ -8,42 +10,17 @@ from flask import (
     request, 
     redirect,
     url_for)
-from flask_sqlalchemy import SQLAlchemy
+from flask_pymongo import PyMongo
 
 #################################################
 # Flask Setup
 #################################################
 app = Flask(__name__)
 
-#################################################
-# Database Setup
-#################################################
+app.config["MONGO_DBNAME"] ="gooddeeds"
+app.config["MONGO_URI"] = "mongodb://toncus2000:goodeeds5491@ds059205.mlab.com:59205/gooddeeds?retryWrites=false"
+mongo = PyMongo(app)
 
-from flask_sqlalchemy import SQLAlchemy
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db/gooddeeds.sqlite'
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
-
-db = SQLAlchemy(app)
-today=dt.today()
-mydate=""
-
-
-class GoodDeedsSignUp(db.Model):
-    __tablename__ = 'goodeedsign'
-    id = db.Column(db.Integer, primary_key=True)
-    fname = db.Column(db.String(64))
-    lname = db.Column(db.String(64))
-    myemail = db.Column(db.String(64))
-    password1 = db.Column(db.String(64))
-    password2 = db.Column(db.String(64))
-    mydate=db.Column(db.String(24))
-    def __repr__(self):
-        return '<GoodDeedsSignUp %r>' % (self.name)
-
-@app.before_first_request
-def setup():     # Recreate database each time for demo
-    #db.drop_all()
-    db.create_all()
 #################################################
 # Routes
 #################################################
@@ -51,24 +28,51 @@ def setup():     # Recreate database each time for demo
 @app.route('/')
 def index():
     files=[]
-    files = ['static/assets/JourneyofKindness.jpg' ]
+    files = ['static/assets/SomeGoodDeeds.jpg', 'static/assets/DOGOODDEEDS.mp4','static/assets/Awesomeness.pdf', 'static/assets/Awesomeness_th.jpg']
     return render_template('index.html', usfiles = files)
 
 @app.route('/mydata', methods=['GET', 'POST'])
 def mydata():
     if request.method == 'POST':
-        today=dt.today()
+        today=dt.today() #randomgiberash
         fname=request.form['fname'];
         lname=request.form['lname'];
         myemail=request.form['email'];
         password1=request.form['psw'];
         password2=request.form['pswrepeat'];
-        mydate=dt.strftime(today, "%m-%d-%Y\n%I:%M:%S");
-
-        goodeed=GoodDeedsSignUp(fname=fname, lname=lname, myemail=myemail, password1=password1, password2=password2, mydate=mydate)
-        db.session.add(goodeed)
-        db.session.commit()
-        return redirect("http://localhost:5000/su", code=302)
+        mydate=dt.strftime(today, "%m-%d-%Y  %I:%M:%S");
+        goodeed=mongo.db.goodeedsign
+        goodeed.insert({
+            'fname':fname, 
+            'lname':lname, 
+            'myemail':myemail, 
+            'password1':password1, 
+            'password2':password2, 
+            'mydate':mydate}
+            )
+        return redirect("/su", code=302)
+   
+@app.route("/gdmaillist", methods=['GET', 'POST'])
+def list_goodeeds():
+        gooddeeds=[]
+        results=mongo.db.goodeedsign.find()
+        for result in results:
+            fname=result['fname']
+            lname=result['lname']
+            myemail=result['myemail']
+            password1=result['password1']
+            password2=result['password2']
+            mydate=result['mydate']
+            gooddeeds.append({
+                'fname':fname, 
+                'lname':lname, 
+                'myemail':myemail, 
+                'password1':password1, 
+                'password2':password2, 
+                'mydate':mydate})            
+        
+        
+        return render_template('result.html', gooddeeds=gooddeeds)
 
 @app.route("/mission", methods=['GET', 'POST'])
 def mission():
@@ -144,23 +148,6 @@ def poem2():
 @app.route("/poem3", methods=['GET', 'POST'])
 def poem3():
     return render_template('lightBulbMoments.html', list=[])
-
-@app.route("/gdmaillist", methods=['GET', 'POST'])
-def list_goodeeds():
-    results = db.session.query(GoodDeedsSignUp.fname, GoodDeedsSignUp.lname, GoodDeedsSignUp.myemail, GoodDeedsSignUp.password1, GoodDeedsSignUp.password2, GoodDeedsSignUp.mydate).all()
-
-    gooddeeds = []
-    for result in results:
-        gooddeeds.append({
-            "fname": result[0],
-            "lname": result[1],
-            "myemail": result[2],
-            "password1": result[3],
-            "password2": result[4],
-            "mydate":result[5]
-        })
-    return render_template('result.html', gooddeeds=gooddeeds)
-
 
 if __name__ == "__main__":
     app.run(debug=True)
