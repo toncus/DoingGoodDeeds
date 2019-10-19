@@ -76,7 +76,7 @@ def list_goodeeds():
 
 @app.route("/mission", methods=['GET', 'POST'])
 def mission():
-    files= [ 'static/assets/ImagineLg.jpg' ]
+    files= [ 'static/assets/ImagineSm.jpg' ]
     return render_template('mission.html', usfiles=files)
 
 @app.route("/cert", methods=['GET', 'POST'])
@@ -86,13 +86,18 @@ def certAwe():
 
 @app.route("/didIoffer", methods=['GET', 'POST'])
 def diof():
-    files= ['static/assets/DidIOffer.jpg', 'static/assets/BeThatOne.jpg', 'static/assets/SomeGoodDeeds.jpg', 'static/assets/Imagine.jpg', 'static/assets/KindnessCan.jpg','static/assets/NOWHERE.jpg']
+    files= ['static/assets/DidIOffer.jpg', 'static/assets/BeThatOne.jpg', 'static/assets/SomeGoodDeeds.jpg', 'static/assets/Imagine4x4.jpg', 'static/assets/KindnessCan.jpg','static/assets/NOWHERE.jpg']
     return render_template('didIoffer.html', usfiles=files)
 
 @app.route("/didIoffer2", methods=['GET', 'POST'])
 def diof2():
     files= ['static/assets/FocusOnTheGood.jpg', 'static/assets/FocusOnTheGood2.jpg', 'static/assets/BeTheChange.jpg', 'static/assets/DreamKindness.jpg', 'static/assets/GratitudeFriends.jpg','static/assets/TrueFriend.jpg']
     return render_template('didIoffer2.html', usfiles=files)
+
+@app.route("/didIoffer3", methods=['GET', 'POST'])
+def diof3():
+    files= ['static/assets/Imagine4x4.jpg', 'static/assets/JourneyofKindnessCollage.jpg', 'static/assets/ThisLittleLight.jpg', 'static/assets/BearHug.jpg', 'static/assets/KindnessFruits.jpg' ]
+    return render_template('didIoffer3.html', usfiles=files)
 
 
 @app.route("/speech", methods=['GET', 'POST'])
