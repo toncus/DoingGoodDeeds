@@ -28,3 +28,4 @@ wcwidth==0.1.7
 Werkzeug==0.16.0
 gunicorn==19.7.1
 python-dateutil==2.8.0
+pytz==2019.3
