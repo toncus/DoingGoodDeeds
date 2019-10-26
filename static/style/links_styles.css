@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+h4 {
+  color: navy;
+}
+
+h3 {
+  color: navy;
+}
+
+h2 {
+  color: navy;
+  text-align: center;
+  margin-top: 0;
+}
+
+
+a {
+  color: navy;
+  font-weight: bold;
+}
+
+.good-life__header {
+  text-align: center;
+  background-color: beige;
+  margin: 0;
+  padding-top: 5px;
+
+}
+
+.container {
+  max-width: 1500px;
+  margin: auto;
+  background-color: beige;
+}
+
+.container>div {
+  text-align: center;
+  line-height: 26px;
+  font-size: 20px;
+  color: navy;
+}
+.panel{
+  border: 3px solid navy;
+  background-color: beige;
+}
+
+.mbox {
+    width: 100%;
+    height: 500px;
+    border: 3px solid navy;
+}
+
+.btn-group {
+    justify-content: start;
+}
+
+.btn {
+  background-color: rgb(51,122,183);
+  color: white;
+  height: 50px;
+  padding: 14px 20px;
+  margin: 8px 3px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  width: 150px;
+  opacity: 0.9;
+
+}
+
+.btn:hover {
+  opacity:1;
+}

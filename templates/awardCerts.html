@@ -8,32 +8,33 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="../static/style/cert_styles.css">
+  <link rel="stylesheet" type="text/css" href="../static/style/award_styles.css">
 </head>
 <body>      
   <!–– Top Banner section  -->
+
   <div class="good-life__header">
-    <h2>#THEGOODLIFE = GOOD PEOPLE DOING GOOD DEEDS/THINGS FOR THE GOOD OF ALL</h2>
+    <center><h2>#THEGOODLIFE = GOOD PEOPLE DOING GOOD DEEDS/THINGS FOR THE GOOD OF ALL</h2></center>
   </div>
 
-<!–– Container  -->
+<!–– First Row  -->
+<div class="container-fluid">
+    <center><h2 class="magickind">Do you know anyone that does good deeds? Do a good deed and recognize them. Download below and give to them.</h2></center>
+
+</div>
 
 <div class="container">
 
 <!–– Row -->
       <div>   
-          <img class="img-fluid" src="{{usfiles[0]}}" alt="Certificate of Awesomeness">
+            <center><img class="img-fluid" src="{{usfiles[0]}}" alt="Awesome Person Award"></center>
       </div>
       
       <div class="btn-group" class="cfloats">
-
+          <center>
            <a href="/" class="btn btn-primary btn-lg" role="button">Home</a>
 
-           <a class="btn btn-primary btn-lg" onclick ='callPrint("hiddencert")'>Print The Cert</a>
-
            <a href="{{usfiles[0]}}" download class="btn btn-primary btn-lg" >Download The Cert</a>
-
-           <a href="/award" class="btn btn-primary btn-lg" role="button">The Award</a>
 
            <a href="/speech" class="btn btn-primary btn-lg" role="button">The Speech</a>
 
@@ -44,9 +45,9 @@
            <a href="/gdlinks" class="btn btn-primary btn-lg" role="button">Links</a>
 
            <a href="/didIoffer" class="btn btn-primary btn-lg" role="button">Collages</a>
-
+          </center>
       </div>
-      <iframe id="hiddencert" src="{{usfiles[1]}}"></iframe>
+
 
 </div>     
    
