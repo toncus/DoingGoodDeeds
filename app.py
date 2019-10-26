@@ -34,7 +34,7 @@ def index():
 @app.route('/mydata', methods=['GET', 'POST'])
 def mydata():
     if request.method == 'POST':
-        today=dt.today()-dtd(hours=4) #randomgiberash
+        today=dt.today()-dtd(hours=4)
         fname=request.form['fname'];
         lname=request.form['lname'];
         myemail=request.form['email'];
@@ -101,7 +101,7 @@ def diof2():
 
 @app.route("/didIoffer3", methods=['GET', 'POST'])
 def diof3():
-    files= ['static/assets/Imagine4x4.jpg', 'static/assets/JourneyofKindnessCollage.jpg', 'static/assets/ThisLittleLight.jpg', 'static/assets/BearHug.jpg', 'static/assets/KindnessFruits.jpg' ]
+    files= ['static/assets/BeingGrateful.jpg', 'static/assets/BEYOUTYFULL.jpg', 'static/assets/ThisLittleLight.jpg', 'static/assets/BearHug.jpg', 'static/assets/KindnessFruits.jpg' ]
     return render_template('didIoffer3.html', usfiles=files)
 
 @app.route("/boot", methods=['GET', 'POST'])
