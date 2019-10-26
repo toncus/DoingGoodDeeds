@@ -37,21 +37,23 @@ p {
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
-}
-
-.poempanel {
-  background-color: white;
-  color: navy;
-  padding-left: 20px;
-  padding-right: 20px;
+  text-align: center;
 }
 
 #magickind {
    color: rgb(128,128,0);
    font-weight: bold;
    margin: 5px;	
+   display: inline-block;
 }
 
+.poempanel {
+  text-align: center;
+  background-color: white;
+  color: navy;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 #row1 {
 
 	height: 700px;
