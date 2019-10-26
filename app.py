@@ -76,13 +76,18 @@ def list_goodeeds():
 
 @app.route("/mission", methods=['GET', 'POST'])
 def mission():
-    files= [ 'static/assets/ImagineSm.jpg' ]
+    files= [ 'static/assets/ImagineLg.jpg' ]
     return render_template('mission.html', usfiles=files)
 
 @app.route("/cert", methods=['GET', 'POST'])
 def certAwe():
     files= ['static/assets/Awesomeness.jpg', 'static/assets/Awesomeness.pdf']
     return render_template('certAwesome.html', usfiles=files)
+
+@app.route("/award", methods=['GET', 'POST'])
+def awePers():
+    files= ['static/assets/AwesomePersonAward.jpg',]
+    return render_template('awardCerts.html', usfiles=files)
 
 @app.route("/didIoffer", methods=['GET', 'POST'])
 def diof():
@@ -99,6 +104,9 @@ def diof3():
     files= ['static/assets/Imagine4x4.jpg', 'static/assets/JourneyofKindnessCollage.jpg', 'static/assets/ThisLittleLight.jpg', 'static/assets/BearHug.jpg', 'static/assets/KindnessFruits.jpg' ]
     return render_template('didIoffer3.html', usfiles=files)
 
+@app.route("/boot", methods=['GET', 'POST'])
+def boot():
+    return render_template('bootstrap.html', list=[])
 
 @app.route("/speech", methods=['GET', 'POST'])
 def speech():
@@ -106,8 +114,7 @@ def speech():
 
 @app.route("/gdlinks", methods=['GET', 'POST'])
 def gdlinks():
-    files= [ 'static/assets/Imagine.jpg' ]
-    return render_template('gdlinks.html', usfiles=files)
+    return render_template('links.html', list=[])
 
 @app.route("/batam", methods=['GET', 'POST'])
 def batam():
