@@ -101,7 +101,7 @@ def diof2():
 
 @app.route("/didIoffer3", methods=['GET', 'POST'])
 def diof3():
-    files= ['static/assets/BeingGrateful.jpg', 'static/assets/BEYOUTYFULL.jpg', 'static/assets/ThisLittleLight.jpg', 'static/assets/BearHug.jpg', 'static/assets/KindnessFruits.jpg' ]
+    files= ['static/assets/BeingGrateful.jpg', 'static/assets/BEYOUTYFULL.jpg', 'static/assets/ThisLittleLight.jpg', 'static/assets/BearHug.jpg', 'static/assets/Imagine4x4.jpg', 'static/assets/KindnessFruits.jpg' ]
     return render_template('didIoffer3.html', usfiles=files)
 
 @app.route("/boot", methods=['GET', 'POST'])
