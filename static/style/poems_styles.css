@@ -53,12 +53,8 @@ p {
   color: navy;
   padding-left: 20px;
   padding-right: 20px;
-}
-#row1 {
-
-	height: 700px;
-	margin: 25px;
-
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 
@@ -85,6 +81,3 @@ button {
 button:hover {
   opacity:1;
 }
-
-
-
