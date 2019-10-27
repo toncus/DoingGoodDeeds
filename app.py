@@ -50,7 +50,7 @@ def mydata():
             'password2':password2, 
             'mydate':mydate}
             )
-        return redirect("/su", code=302)
+        return redirect("templates/welcome.php", code=302)
    
 @app.route("/gdmaillist", methods=['GET', 'POST'])
 def list_goodeeds():
@@ -69,8 +69,7 @@ def list_goodeeds():
                 'myemail':myemail, 
                 'password1':password1, 
                 'password2':password2, 
-                'mydate':mydate})            
-        
+                'mydate':mydate})
         
         return render_template('result.html', gooddeeds=gooddeeds)
 
