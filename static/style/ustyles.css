@@ -11,9 +11,6 @@ body{
 
 }
 
-.navbar{
-	background-color: navy;
-}
 a {
   color: navy;
   font-weight: bold;
@@ -22,6 +19,7 @@ a {
 h2 {
 	color: navy
 }
+
 h3 {
 	color: navy
 }
@@ -33,103 +31,16 @@ p {
   line-height: 24px;
 }
 
-.poempanel {
-
-  background-color: white;
-  color: navy;
-  padding-left: 20px;
-  padding-right: 20px;
-
-}
-
-#magickind {
-   color: rgb(128,128,0);
-   font-weight: bold;
-   margin: 5px;
-	
-}
-
-
-
-#row1 {
-
-	height: 700px;
-	margin: 25px;
-
-}
-
-#row2 {
-	height: 700px;
-	margin: 25px;
-	padding: 10px;
-}
-
-#row3 {
-	height: 750px;
-	margin-bottom: 0;
-	align-self: center;
-	text-align: center;
-	padding-top: 40%;
-}
-
-
-
-.bbox {
-	box-sizing: border-box;
-  	width: 32%;
-  	border: 3px solid navy;
-  	float: left;
-}
-
+/*
 .subox {
-  box-sizing: border-box;
-  color: navy;
-    width: 32%;
+    display: block;
+    color: navy;
     line-height: 24px;
     font-size: large;
-
-}
-
-.certbox {
-	box-sizing: border-box;
-  	left: 20%;
-  	width: 80%;
-  	border: 3px solid navy;
-}
-
-.ilbox {
-  box-sizing: border-box;
-  background: beige;
-  color: navy;
-  width: 50%;
-  line-height: 24px;
-  font-size: large;
-  border: 3px solid navy;
-
-}
-
-
-.mbox {
-  box-sizing: border-box;
-  margin-left: 1%;
-    width: 60%;
-    border: 5px solid navy;
-
-}
-.lbbox {
-	box-sizing: border-box;
-	margin-left: 1%;
-  	width: 70%;
-  	border: 5px solid navy;
-
-}
-.linksbox {
-	box-sizing: border-box;
-	width: 50%;
-  height: 650px;
-  	border: 5px solid navy;
-  	float: right;
-}
+    color:navy; 
+    width: 75%; 
+    height: 800px;
+  } */
 
 .img-fluid {
 	max-width: 100%;
@@ -137,96 +48,52 @@ p {
 	margin-bottom: 0;
 }
 
-/* Left */
-#qpanel{
-	background-color: #000080;
-	color: white;
-	height: 700px;
-	margin: 20px;
-	padding: 10px;
-	font-size: xx-large;
-}
-
-#hiddencert{display: none;}
-/* End row */
-
-
-#phone {
-  background-color: navy; 
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  float: left;
-}
-
-#glspeech {
-   color: rgb(128,128,0);
-   font-size: 2.5em;
-   font-weight: bold;
-   margin: 5px;
-  
-}
-
-.resp-container {
-    position: relative;
-    overflow: hidden;
-    padding-top: 60%;
-}
-
-.resp-iframe {
-    position: absolute;
-    top: 0;
-    left: 14%;
-    width: 85%;
-    height: 50%;
-    border: 0;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
 .cfloats {
 	clear: both;
 	overflow: auto;
 }
 
-.column {padding: 25px;}
-* {box-sizing: border-box}
+  label {
+  display: block;
+  text-align: left;
+  width: 50%;
+  padding: 5px;
+  margin: 5px 0 5px 0;
+  display: inline-block;
+  border: none;
+  }
 
-/* Full-width input fields */
   input[type=text] {
-  width: 45%;
+  width: 50%;
   padding: 5px;
-  margin: 5px 0 20px 0;
+  margin: 5px 0 10px 0;
   display: inline-block;
   border: none;
   background: #f1f1f1;
 }
 
  input[type=password] {
-  width: 30%;
+  width: 50%;
   padding: 5px;
-  margin: 5px 0 20px 0;
+  margin: 5px 0 10px 0;
   display: inline-block;
   border: none;
   background: #f1f1f1;
 }
 
  input[type=password] {
-  width: 30%;
+  width: 50%;
   padding: 5px;
-  margin: 5px 0 20px 0;
+  margin: 5px 0 10px 0;
   display: inline-block;
   border: none;
   background: #f1f1f1;
 }
 
  input[name="doe"] {
-  width: 30%;
+  width: 50%;
   padding: 5px;
-  margin: 5px 0 20px 0;
+  margin: 5px 0 10px 0;
   display: inline-block;
   border: none;
   background: #f1f1f1;
@@ -237,11 +104,7 @@ input[type=text]:focus, input[type=password]:focus {
   outline: none;
 }
 
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-  width: 10%;
-}
+
 
 /* Set a style for all buttons */
 button {
@@ -273,7 +136,10 @@ button:hover {
 
 /* Add padding to container elements */
 .container {
+
+  margin: 0 auto;
   padding: 16px;
+  border: 10px solid navy;
 }
 
 /* Clear floats */
@@ -290,4 +156,4 @@ button:hover {
   }
 }
 
-#footer {float: left; width: 97%;border: 3px solid navy;float:left;margin-left: 1em;margin-bottom: 3em;height: 75px;color: navy;}
+#footer {float: left; width: 90%;border: 3px solid navy;float:left;margin-left: 1em;margin-bottom: 3em;height: 80px;color: navy;}
