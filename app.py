@@ -34,6 +34,7 @@ def index():
 @app.route('/mydata', methods=['GET', 'POST'])
 def mydata():
     if request.method == 'POST':
+        files = ['static/assets/TonyCusumano.jpg', ]
         today=dt.today()-dtd(hours=4)
         fname=request.form['fname'];
         lname=request.form['lname'];
@@ -50,29 +51,8 @@ def mydata():
             'password2':password2, 
             'mydate':mydate}
             )
-        return redirect("/su", code=302)
+        return render_template('thankyou.html', fname=fname)
    
-@app.route("/gdmaillist", methods=['GET', 'POST'])
-def list_goodeeds():
-        gooddeeds=[]
-        results=mongo.db.goodeedsign.find()
-        for result in results:
-            fname=result['fname']
-            lname=result['lname']
-            myemail=result['myemail']
-            password1=result['password1']
-            password2=result['password2']
-            mydate=result['mydate']
-            gooddeeds.append({
-                'fname':fname, 
-                'lname':lname, 
-                'myemail':myemail, 
-                'password1':password1, 
-                'password2':password2, 
-                'mydate':mydate})
-        
-        return render_template('result.html', gooddeeds=gooddeeds)
-
 @app.route("/mission", methods=['GET', 'POST'])
 def mission():
     files= [ 'static/assets/ImagineLg.jpg' ]
