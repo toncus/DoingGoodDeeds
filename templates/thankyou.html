@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>THE GOOD LIFE!</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../static/style/stories_styles.css">
+</head>
+<body>      
+  <!–– Top Banner section  -->
+  <nav class="good-life__header">
+    <h2>#THEGOODLIFE = GOOD PEOPLE DOING GOOD DEEDS/THINGS FOR THE GOOD OF ALL</h2>
+  </nav>
+
+<!–– Container  -->
+
+<div class="container">
+    <div class="row">
+
+<!–– Row 7 -->
+    <div class="poempanel" class="col-xs-12 col-sm-6 col-md-4" >
+                <center><h1 id="magickind">Thank you for signing up!</h1></center>
+                <img src="\static\assets\THANKYOU.jpg" alt="ThankYou!" height="175" width="200"></br>
+
+                {% if (password1==password2) %}
+                  <p>Welcome {{fname}}<p>
+
+                {% else %}  
+                  <h1>Passwords don't match</h1>
+                {% endif %}
+
+                <p>Thank you so much for signing up!</br></br>
+
+                Your information has been stored in our database.</br></br>
+
+                We will be happy to reach out with any news about future deploys.</br></br>
+
+                Give yourself a hand for taking a major step in your journey of AWESOMENESS.</br></br>
+
+                People like you truly make the world a better place.</br></br>
+
+                Thank you!</p>
+
+                <a href="/" class="btn btn-primary btn-lg" role="button">Home</a>
+
+    </div>     
+   
+        <script src="../static/scripts/jquery-3.3.1.min.js"></script>
+        <script src="../static/scripts/bootstrap.min.js"></script>
+        <script src="../static/scripts/app.js"></script>
+      
+
+</body>
+</html>     
