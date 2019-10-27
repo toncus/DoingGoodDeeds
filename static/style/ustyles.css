@@ -29,24 +29,9 @@ p {
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
+  color: navy;
 }
 
-/*
-.subox {
-    display: block;
-    color: navy;
-    line-height: 24px;
-    font-size: large;
-    color:navy; 
-    width: 75%; 
-    height: 800px;
-  } */
-
-.img-fluid {
-	max-width: 100%;
-	height: auto;
-	margin-bottom: 0;
-}
 
 .cfloats {
 	clear: both;
@@ -61,6 +46,9 @@ p {
   margin: 5px 0 5px 0;
   display: inline-block;
   border: none;
+  font-size: 20px;
+  color: navy;
+  line-height: 24px;
   }
 
   input[type=text] {
@@ -156,4 +144,4 @@ button:hover {
   }
 }
 
-#footer {float: left; width: 90%;border: 3px solid navy;float:left;margin-left: 1em;margin-bottom: 3em;height: 80px;color: navy;}
+#footer {float: left; width: 90%;border: 3px solid navy;float:left;margin-left: 1em;margin-bottom: 3em;height: 90px;color: navy;}
