@@ -29,7 +29,7 @@ mongo = PyMongo(app)
 def index():
     files=[]
     files = files = ['static/assets/JourneyofKindness.jpg' ]
-    return render_template('index.html', usfiles = files)
+    return render_template('expindex.html', usfiles = files)
 
 @app.route('/mydata', methods=['GET', 'POST'])
 def mydata():
@@ -56,6 +56,11 @@ def mydata():
 def mission():
     files= [ 'static/assets/ImagineLg.jpg' ]
     return render_template('mission.html', usfiles=files)
+
+@app.route("/media", methods=['GET', 'POST'])
+def media():
+    files= [ 'static/assets/ImagineLg.jpg' ]
+    return render_template('media.html', usfiles=files)
 
 @app.route("/cert", methods=['GET', 'POST'])
 def certAwe():
@@ -90,9 +95,9 @@ def boot():
 def speech():
     return render_template('speech.html', list=[])
 
-@app.route("/gdlinks", methods=['GET', 'POST'])
-def gdlinks():
-    return render_template('links.html', list=[])
+@app.route("/gdvids", methods=['GET', 'POST'])
+def gdvids():
+    return render_template('videos.html', list=[])
 
 @app.route("/batam", methods=['GET', 'POST'])
 def batam():
