@@ -29,7 +29,7 @@ mongo = PyMongo(app)
 def index():
     files=[]
     files = files = ['static/assets/JourneyofKindness.jpg' ]
-    return render_template('expindex.html', usfiles = files)
+    return render_template('index.html', usfiles = files)
 
 @app.route('/mydata', methods=['GET', 'POST'])
 def mydata():
@@ -143,6 +143,11 @@ def poem2():
 @app.route("/poem3", methods=['GET', 'POST'])
 def poem3():
     return render_template('lightBulbMoments.html', list=[])
+
+@app.route("/links", methods=['GET', 'POST'])
+def links():
+    files= ['static/assets/GOODDEEDS.jpg' ]
+    return render_template('links.html', usfiles=files)
 
 if __name__ == "__main__":
     app.run(debug=True)
