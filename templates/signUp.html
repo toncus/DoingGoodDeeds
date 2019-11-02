@@ -6,24 +6,28 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="../static/style/ustyles.css">
-  
+  <link rel="stylesheet" type="text/css" href="../static/style/signup_styles.css">
 </head>
-
 <body>      
   <!–– Top Banner section  -->
   <div class="good-life__header">
     <h2>#THEGOODLIFE = GOOD PEOPLE DOING GOOD DEEDS/THINGS FOR THE GOOD OF ALL</h2>
   </div>
 
-<div>
-  <center>
-    <form name="myFSign" method="POST" action="/mydata">
+<!–– Container  -->
+
+<div class="container">
+
+<!–– Row -->
+<div>   
+          <img class="img-fluid centered" src="{{usfiles[0]}}" alt="Certificate of Awesomeness">
+ 
+  <div>
+    <center>
+    <form class="centered" name="myFSign" method="POST" action="/mydata">
         <div class="container">
             <h1>Sign Up !</h1>
-            <h3>Want news about future deploys and join a team of AWESOME people?</h3>
+            <h3>Want news about future deploys and join</br> a team of AWESOME people?</h3>
             <p>Please fill in this form to create an account.</p>
                 <label for="FName"><b>Your First Name</b></label></br>
                 <input type="text" placeholder="Enter Your First Name" name="fname" required></br>
@@ -43,31 +47,19 @@
      
         <div class="cfloats">
           <center>
-            <input type="reset"  id="cancelbtn" value="Cancel/Clear" class="btn btn-primary btn-lg"></input>
-            <input type="submit" id="signupbtn" value="Sign Up" class="btn btn-primary btn-lg"></input>
-            <a href="/" class="btn btn-primary btn-lg" role="button">Home</a>
+            <input type="reset"  id="cancelbtn" value="Cancel/Clear" class="btn btn-primary"></input>
+            <input type="submit" id="signupbtn" value="Sign Up" class="btn btn-primary"></input>
+            <a href="/" class="btn btn-primary" role="button">Home</a>
 
           </center>
         </div>  
         </div>   
     </form>
-  </center>
-  <center>
-      <div id="footer" class="bg-info text-black" style="margin: auto";>
-             <div class="footer__content">
-                <div>
-                  <p>Copyright <span id="current-date"></span></p>
-                </div>
-                <div>
-                  <p>For more information please contact: Tony Cusumano at <a href="mailto:toncus2000@gmail.com">toncus2000@gmail.com</a></p>
-                </div>
-             </div>
-      </div>
-  </center>
-</div>
-         <script src="../static/scripts/jquery-3.3.1.min.js"></script>
-         <script src="../static/scripts/bootstrap.min.js"></script>
-         <script src="../static/scripts/app.js"></script>
-
-      </body>
-</html>
+    </center>
+  </div> 
+</div>   
+        <script src="../static/scripts/jquery-3.3.1.min.js"></script>
+        <script src="../static/scripts/bootstrap.min.js"></script>
+        <script src="../static/scripts/app.js"></script>
+</body>
+</html> 
