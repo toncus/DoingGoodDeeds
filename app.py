@@ -117,7 +117,7 @@ def tstarfish():
 
 @app.route("/su", methods=['GET', 'POST'])
 def signup():
-    files = ['static/assets/BeThatOne.jpg', 'static/assets/SomeGoodDeeds.jpg', 'static/assets/JourneyofKindness.jpg', 'static/assets/Imagine.jpg', 'static/assets/NOWHERE.jpg']
+    files = ['static/assets/AwesomeBorder.jpg']
     return render_template('signUp.html', usfiles=files)
 
 @app.route("/tpc1", methods=['GET', 'POST'])
