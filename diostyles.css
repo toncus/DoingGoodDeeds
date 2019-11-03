@@ -1,0 +1,48 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+
+.good-life__header {
+	text-align: center;
+	background-color: beige;
+	margin: 0;
+	padding-top: 1px;
+
+}
+
+h2 {
+	color: navy;
+}
+
+.fixed-container {
+	max-width: 1500px;
+	margin: auto;
+	background-color: beige;
+	padding: 0;
+	align-items: center;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+
+.bbox {
+	box-sizing: border-box;
+  	flex-basis: : 15%;
+  	height: auto;
+  	line-height: 90px;
+ 	text-align: center; 	
+  	margin-bottom: 5px;
+  	padding: 5px;
+
+}
+
+.cfloats {
+	clear: both;
+	overflow: auto;
+}
+
+#hiddencert{display: none;}
+
