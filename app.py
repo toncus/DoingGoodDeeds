@@ -1,5 +1,7 @@
 import os
+import pandas as pd
 import numpy as np
+import random
 import pymongo
 from datetime import datetime as dt
 from datetime import timedelta as dtd
@@ -51,6 +53,18 @@ def mydata():
             'mydate':mydate}
             )
         return render_template('thankyou.html', fname=fname)
+
+@app.route('/mygooddeed', methods=['GET', 'POST'])
+def mygooddeed():
+        files = ['static/assets/AwesomeBorder.jpg']
+        my_csv = os.path.join('Resources/Gooddeeds.csv')
+        with open(my_csv, newline="") as csvfile:
+            mycsv_df = pd.read_csv(my_csv, delimiter=",", encoding='utf-8', header=None)
+            pd.set_option('display.max_colwidth', -1)
+            mydeed=str(mycsv_df.iloc[int(random.randrange(1,169))])
+            mydeed=mydeed[3:-25]
+            return render_template('gdsRoulette.html', mydeed=mydeed, usfiles=files)
+
    
 @app.route("/mission", methods=['GET', 'POST'])
 def mission():
