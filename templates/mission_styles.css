@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.good-life__header {
+  text-align: center;
+  background-color: beige;
+  margin: 0;
+  padding-top: 5px;
+}
+
+h4 {
+  color: navy;
+}
+
+h3 {
+  color: navy;
+}
+
+h2 {
+  color: navy;
+  text-align: center;
+  margin-top: 0;
+}
+
+a {
+  color: navy;
+  font-weight: bold;
+}
+
+.magickind {
+   color: rgb(128,128,0);
+   font-weight: bold;
+   margin: 0;
+}
+
+.container {
+  max-width: 1500px;
+  margin: auto;
+  background-color: beige;
+}
+
+.container>div {
+  text-align: center;
+  line-height: 24px;
+  font-size: 18px;
+  color: navy;
+}
+
+img {
+  display: block;
+  height: 350px;
+  margin-left: 25%;
+  margin-right: auto;
+  padding: 1px;
+  width: 60%;
+}
+
+.img-container {
+    text-align: center;
+}
+
+p {
+  width: 100%;
+  height: 100%;
+  margin: 10px 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: navy;
+}
+
+.btn-group {
+    justify-content: start;
+}
+
+.btn {
+  background-color: rgb(51,122,183);
+  color: white;
+  height: 35px;
+  padding: 14px 20px;
+  margin: 8px 3px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  width: 150px;
+  opacity: 0.9;
+
+}
+
+.btn:hover {
+  opacity:1;
+}
+
+table tr td {
+  margin-top: 10px;
+  border: 5px solid navy;
+  font-size: 12px;
+}
+
+td {
+  height: 50px;
+}
+
+@media only screen and (max-width: 992px) {
+  /* For mobile phones: */
+  img {
+    width: 100%;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
