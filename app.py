@@ -19,8 +19,8 @@ from flask_pymongo import PyMongo
 #################################################
 app = Flask(__name__)
 
-app.config["MONGO_DBNAME"] ="gooddeeds"
-app.config["MONGO_URI"] = "mongodb://toncus2000:goodeeds5491@ds059205.mlab.com:59205/gooddeeds?retryWrites=false"
+app.config["MONGO_DBNAME"] ="heroku_d68btb4j"
+app.config["MONGO_URI"] = "mongodb://<dbuser>:<dbpassword>@ds141198.mlab.com:41198/heroku_d68btb4j?retryWrites=false"
 mongo = PyMongo(app)
 
 #################################################
