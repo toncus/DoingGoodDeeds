@@ -18,7 +18,7 @@ from flask_pymongo import PyMongo
 # Flask Setup
 #################################################
 app = Flask(__name__)
-dbconn=os.environ.get('dbconn')
+dbconn=app.config[dbconn]
 app.config["MONGO_DBNAME"] ="heroku_d68btb4j"
 app.config["MONGO_URI"] = dbconn
 
