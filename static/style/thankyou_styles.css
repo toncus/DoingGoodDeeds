@@ -1,0 +1,92 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+/* Top Banner section */
+.good-life__header {
+  text-align: center;
+  background-color: beige;
+  margin: 0;
+  padding-top: 5px;
+
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+i {
+  color: rgb(128,128,0);
+}
+
+a {
+  color: navy;
+  font-weight: bold;
+}
+
+h2 {
+  color: navy
+}
+h3 {
+  color: navy
+}
+
+p {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+#magickind {
+   color: rgb(128,128,0);
+   font-weight: bold;
+   margin: 5px; 
+   display: inline-block;
+}
+
+.poempanel {
+  text-align: center;
+  background-color: white;
+  color: navy;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.poempanel {
+  text-align: center;
+  background-color: white;
+  color: navy;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.cfloats {
+  clear: both;
+  overflow: auto;
+}
+
+.column {padding: 25px;}
+* {box-sizing: border-box}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}

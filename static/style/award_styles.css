@@ -1,0 +1,54 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+/* Top Banner section */
+
+.good-life__header {
+	text-align: center;
+	background-color: beige;
+	margin: 0;
+	padding-top: 5px;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+  text-align: center;
+}
+
+.container>div {
+    display: inline-block;
+}
+
+a {
+  color: navy;
+  font-weight: bold;
+}
+
+h2 {
+	color: navy
+}
+h3 {
+	color: navy
+}
+
+#magickind {
+   color: rgb(128,128,0);
+   font-weight: bold;
+   margin: 5px;	
+}
+
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 0;
+}
+
+.cfloats {
+	clear: both;
+	overflow: auto;
+}
+
+

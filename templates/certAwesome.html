@@ -8,42 +8,35 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="../static/style/ustyles.css">
-  <link rel="stylesheet" type="text/css" href="../static/style/styles.css">
+  <link rel="stylesheet" type="text/css" href="../static/style/cert_styles.css">
 </head>
 <body>      
   <!–– Top Banner section  -->
-  <nav class="good-life__header">
+  <div class="good-life__header">
     <h2>#THEGOODLIFE = GOOD PEOPLE DOING GOOD DEEDS/THINGS FOR THE GOOD OF ALL</h2>
-  </nav>
+  </div>
 
 <!–– Container  -->
 
-<div class="container" style="text-align: center">
+<div class="container">
 
 <!–– Row -->
-      <div style="display: inline-block">   
-            <center><img class="img-fluid" src="{{usfiles[0]}}" alt="Certificate of Awesomeness"></center>
+      <div>   
+          <img class="img-fluid" src="{{usfiles[0]}}" alt="Certificate of Awesomeness">
       </div>
       
-      <div class="btn-group" class="cfloats" style="display: inline-block">
-          <center>
+      <div class="btn-group" class="cfloats">
+
            <a href="/" class="btn btn-primary btn-lg" role="button">Home</a>
 
            <a class="btn btn-primary btn-lg" onclick ='callPrint("hiddencert")'>Print The Cert</a>
 
            <a href="{{usfiles[0]}}" download class="btn btn-primary btn-lg" >Download The Cert</a>
 
-           <a href="/speech" class="btn btn-primary btn-lg" role="button">The Speech</a>
+           <a href="/award" class="btn btn-primary btn-lg" role="button">The Award</a>
 
-           <a href="/poem1" class="btn btn-primary btn-lg" role="button">Poems</a>
+           <a href="/media" class="btn btn-primary btn-lg" role="button">Media</a>
 
-           <a href="/t2wolves" class="btn btn-primary btn-lg" role="button">Stories</a>
-
-           <a href="/gdlinks" class="btn btn-primary btn-lg" role="button">Links</a>
-
-           <a href="/didIoffer" class="btn btn-primary btn-lg" role="button">Collages</a>
-          </center>
       </div>
       <iframe id="hiddencert" src="{{usfiles[1]}}"></iframe>
 
@@ -54,4 +47,5 @@
         <script src="../static/scripts/app.js"></script>
       
 
-</body>      
+</body>
+</html>      
