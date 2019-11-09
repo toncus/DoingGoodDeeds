@@ -1,1 +1,1 @@
-web gunicorn doinggoodness:app
+web gunicorn app:app
