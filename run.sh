@@ -1,1 +1,1 @@
-FLASK_APP=DOGOODy/app.py flask run
+FLASK_APP=DoingGoodDeeds/app.py flask run
