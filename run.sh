@@ -1,0 +1,1 @@
+FLASK_APP=DoingGoodDeeds/app.py flask run
