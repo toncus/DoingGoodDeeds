@@ -1,0 +1,280 @@
+<<<<<<< HEAD
+body {
+    margin: 0;
+    padding: 0;
+}
+h4 {
+  color: navy;
+}
+
+h3 {
+  color: navy;
+}
+
+h2 {
+  color: navy;
+  text-align: center;
+  margin-top: 0;
+}
+
+.navbar{
+  background-color: navy;
+}
+a {
+  color: navy;
+  font-weight: bold;
+}
+
+#magickind {
+   color: rgb(128,128,0);
+   font-weight: bold;
+   margin: 0;
+  
+}
+.row  {
+    display: flex;
+}
+
+.container {
+  max-width: 1500px;
+  margin: auto;
+  background-color: beige;
+}
+
+.container>div {
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 26px;
+  font-size: 20px;
+  color: navy;
+  flex-basis: 35%;
+}
+
+@media (min-width: 1000px;) {
+    .container {
+    display: flex;
+    justify-content: space-between;
+    }
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  margin: 1px;
+  padding: 1px;
+  border: 2px dotted white;
+  flex: 1;
+}
+
+p {
+  width: 100%;
+  height: 100%;
+  margin: 3px;
+  padding: 1px;
+  border: 2px dotted white;
+  flex: 1;  
+}
+
+.mbox {
+  box-sizing: border-box;
+  margin-left: 1%;
+    width: 100%;
+    height: 500px;
+    border: 3px solid navy;
+
+}
+
+.lksbox {
+  box-sizing: border-box;
+  margin-left: 2.5%;
+    width: 90%;
+    height: 558px;
+    flex: 2.9;
+    float: left;
+}
+
+.linksbox {
+  box-sizing: border-box;
+  width: 30%;
+  height: 350px;
+  border: 1px solid navy;
+  flex: 1;
+}
+
+.missionbox {
+  box-sizing: border-box;
+  margin-left: 1%;
+    width: 400px;
+    height: auto;
+    border: 3px solid navy;
+}
+
+#glspeech {
+   color: rgb(128,128,0);
+   font-size: 2.5em;
+   font-weight: bold;
+   margin: 5px;
+  
+}
+
+.btn-group {
+    justify-content: start;
+}
+
+.btn {
+  background-color: rgb(51,122,183);
+  color: white;
+  height: 50px;
+  padding: 14px 20px;
+  margin: 8px 3px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  width: 150px;
+  opacity: 0.9;
+
+}
+
+.btn:hover {
+  opacity:1;
+=======
+body {
+    margin: 0;
+    padding: 0;
+}
+h4 {
+  color: navy;
+}
+
+h3 {
+  color: navy;
+}
+
+h2 {
+  color: navy;
+  text-align: center;
+  margin-top: 0;
+}
+
+.navbar{
+  background-color: navy;
+}
+a {
+  color: navy;
+  font-weight: bold;
+}
+
+#magickind {
+   color: rgb(128,128,0);
+   font-weight: bold;
+   margin: 0;
+  
+}
+.row  {
+    display: flex;
+}
+
+.container {
+  max-width: 1500px;
+  margin: auto;
+  background-color: beige;
+}
+
+.container>div {
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 26px;
+  font-size: 20px;
+  color: navy;
+  flex-basis: 35%;
+}
+
+@media (min-width: 1000px;) {
+    .container {
+    display: flex;
+    justify-content: space-between;
+    }
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  margin: 1px;
+  padding: 1px;
+  border: 2px dotted white;
+  flex: 1;
+}
+
+p {
+  width: 100%;
+  height: 100%;
+  margin: 3px;
+  padding: 1px;
+  border: 2px dotted white;
+  flex: 1;  
+}
+
+.mbox {
+  box-sizing: border-box;
+  margin-left: 1%;
+    width: 100%;
+    height: 500px;
+    border: 3px solid navy;
+
+}
+
+.lksbox {
+  box-sizing: border-box;
+  margin-left: 2.5%;
+    width: 90%;
+    height: 558px;
+    flex: 2.9;
+    float: left;
+}
+
+.linksbox {
+  box-sizing: border-box;
+  width: 30%;
+  height: 350px;
+  border: 1px solid navy;
+  flex: 1;
+}
+
+.missionbox {
+  box-sizing: border-box;
+  margin-left: 1%;
+    width: 400px;
+    height: auto;
+    border: 3px solid navy;
+}
+
+#glspeech {
+   color: rgb(128,128,0);
+   font-size: 2.5em;
+   font-weight: bold;
+   margin: 5px;
+  
+}
+
+.btn-group {
+    justify-content: start;
+}
+
+.btn {
+  background-color: rgb(51,122,183);
+  color: white;
+  height: 50px;
+  padding: 14px 20px;
+  margin: 8px 3px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  width: 150px;
+  opacity: 0.9;
+
+}
+
+.btn:hover {
+  opacity:1;
+>>>>>>> 3abd8e1460a64bedcd67dbf2b3b2866cd6de4340
+}
