@@ -8,6 +8,7 @@ Jinja2==2.10.1
 MarkupSafe==1.1.1
 numpy==1.17.2
 npm==0.1.1
+node=0.9.22
 pandas==0.25.3
 php==1.2.0
 pymongo==3.9.0
