@@ -21,7 +21,7 @@ app = Flask(__name__)
 if os.environ.get('MONGODB_URI'):
   MONGODB_URI=os.environ.get('MONGODB_URI')
 else:
-  MONGODB_URI=process.env.MONGODB_URI
+  MONGODB_URI=process.env('MONGODB_URI')
 
 #MONGODB_URI=os.environ.get('MONGODB_URI')
 #MONGODB_URI=heroku config:get MONGODB_URI -a doinggoodness
