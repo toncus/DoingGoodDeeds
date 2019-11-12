@@ -45,7 +45,7 @@ def mydata():
         password2=request.form['pswrepeat'];
         mydate=dt.strftime(today, "%m-%d-%Y  %I:%M:%S");
         goodeed=mongo.db.goodeedsign
-        goodeed.insert({
+        goodeed.insert_one({
             'fname':fname, 
             'lname':lname, 
             'myemail':myemail, 
