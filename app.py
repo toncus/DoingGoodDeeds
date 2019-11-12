@@ -31,7 +31,7 @@ mongo = PyMongo(app)
 @app.route('/')
 def index():
     files=[]
-    files = files = ['static/assets/JourneyofKindness.jpg' ]
+    files = ['static/assets/JourneyofKindness.jpg' ]
     return render_template('index.html', usfiles = files)
 
 @app.route('/mydata', methods=['GET', 'POST'])
