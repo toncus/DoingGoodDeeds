@@ -19,7 +19,7 @@
   "homepage": "https://github.com/toncus/DoingGoodDeeds#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "mongoose": "^5.7.9",
+    "mongoose": "^5.7.10",
     "validator": "^12.0.0"
   },
   "devDependencies": {}
