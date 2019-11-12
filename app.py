@@ -20,8 +20,6 @@ from flask_pymongo import PyMongo
 app = Flask(__name__)
 if os.environ.get('MONGODB_URI'):
     MONGODB_URI=os.environ.get('MONGODB_URI')
-    app.config["MONGO_DBNAME"] ="heroku_d68btb4j"
-
 
 app.config["MONGO_URI"] = MONGODB_URI
 mongo = PyMongo(app)
