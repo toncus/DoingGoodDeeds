@@ -22,8 +22,6 @@ if os.environ.get('MONGODB_URI'):
     MONGODB_URI=os.environ.get('MONGODB_URI')
     app.config["MONGO_DBNAME"] ="heroku_d68btb4j"
 
-
-#app.config["MONGO_URI"] = "mongodb://heroku_d68btb4j:uhnjf9kil1m6l9q8mktolb6mia@ds141198.mlab.com:41198/heroku_d68btb4j?retryWrites=false"
 app.config["MONGO_URI"] = MONGODB_URI
 mongo = PyMongo(app)
 
