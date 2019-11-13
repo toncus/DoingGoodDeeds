@@ -44,16 +44,21 @@ def mydata():
         password1=request.form['psw'];
         password2=request.form['pswrepeat'];
         mydate=dt.strftime(today, "%c");
-        goodeed=mongo.db.goodeedsign
-        goodeed.insert_one({
-            'fname':fname, 
-            'lname':lname, 
-            'myemail':myemail, 
-            'password1':password1, 
-            'password2':password2, 
-            'mydate':mydate}
-            )
-        return render_template('thankyou.html', fname=fname, password1=password1, password2=password2)
+        if password1 == password2:
+            goodeed=mongo.db.goodeedsign
+            goodeed.insert_one({
+                'fname':fname, 
+                'lname':lname, 
+                'myemail':myemail, 
+                'password1':password1, 
+                'password2':password2, 
+                'mydate':mydate}
+                )
+        else:
+            return render_template("signUp.html", text="passwords did not match-please try again", usfiles=['static/assets/AwesomeBorder.jpg'])
+            
+    
+    return render_template('thankyou.html', fname=fname, password1=password1, password2=password2)
 
 @app.route('/mygooddeed', methods=['GET', 'POST'])
 def mygooddeed():
@@ -133,7 +138,7 @@ def tstarfish():
 @app.route("/su", methods=['GET', 'POST'])
 def signup():
     files = ['static/assets/AwesomeBorder.jpg']
-    return render_template('signUp.html', usfiles=files)
+    return render_template('signUp.html', usfiles=files, text=" ")
 
 @app.route("/tpc1", methods=['GET', 'POST'])
 def phone1():
