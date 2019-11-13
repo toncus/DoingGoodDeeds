@@ -53,7 +53,7 @@ def mydata():
             'password2':password2, 
             'mydate':mydate}
             )
-        return render_template('thankyou.html', fname=fname)
+        return render_template('thankyou.html', fname=fname, password1=password1, password2=password2)
 
 @app.route('/mygooddeed', methods=['GET', 'POST'])
 def mygooddeed():
