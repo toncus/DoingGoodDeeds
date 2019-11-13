@@ -37,13 +37,13 @@ def index():
 @app.route('/mydata', methods=['GET', 'POST'])
 def mydata():
     if request.method == 'POST':
-        today=dt.today()
+        today=dt.now()
         fname=request.form['fname'];
         lname=request.form['lname'];
         myemail=request.form['email'];
         password1=request.form['psw'];
         password2=request.form['pswrepeat'];
-        mydate=dt.strftime(today, "%m-%d-%Y  %I:%M:%S");
+        mydate=dt.strftime(today, "%c");
         goodeed=mongo.db.goodeedsign
         goodeed.insert_one({
             'fname':fname, 
