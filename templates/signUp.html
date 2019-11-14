@@ -10,23 +10,24 @@
 </head>
 <body>      
   <!–– Top Banner section  -->
-  <div class="good-life__header">
+  <div class="bgscrn good-life__header">
     <h2>#THEGOODLIFE = GOOD PEOPLE DOING GOOD DEEDS/THINGS FOR THE GOOD OF ALL</h2>
   </div>
-
+  <div class="smscrn good-life__header" id="myHeader">
+    <h4>#THEGOODLIFE = GOOD PEOPLE DOING GOOD DEEDS/THINGS FOR THE GOOD OF ALL</h4>
+  </div>
 <!–– Container  -->
 
 <div class="container">
 
 <!–– Row -->
 <div>   
-          <img class="img-fluid centered" src="{{usfiles[0]}}" alt="Certificate of Awesomeness">
- 
-  <div>
+
+  <div class="content">
     <center>
-    <form class="centered" name="myFSign" method="POST" action="/mydata">
+    <form name="myFSign" method="POST" action="/mydata">
         <div class="container">
-            <h1>Sign Up !</h1>
+
             <h3>Want news about future deploys and join</br> a team of AWESOME people?</h3>
             <p>Please fill in this form to create an account.</p>
                 <label for="FName"><b>Your First Name</b></label></br>
@@ -49,12 +50,12 @@
      
         <div class="cfloats">
           <center>
-            <input type="reset"  id="cancelbtn" value="Cancel" class="smscrn btn btn-primary"></input>
-            <input type="submit" id="signupbtn" value="Sign Up" class="smscrn btn btn-primary"></input>
+            <input type="reset"  id="smcancelbtn" value="Cancel" class="smscrn btn btn-primary"></input>
+            <input type="submit" id="smsignupbtn" value="Sign Up" class="smscrn btn btn-primary"></input>
             <a href="/" id="home" class="smscrn btn btn-primary" role="button">Home</a>
 
-            <input type="reset"  id="cancelbtn" value="Cancel/Clear" class="bgscrn btn btn-primary btn-lg"></input>
-            <input type="submit" id="signupbtn" value="Sign Up" class="bgscrn btn btn-primary btn-lg"></input>
+            <input type="reset"  id="bgcancelbtn" value="Cancel/Clear" class="bgscrn btn btn-primary btn-lg"></input>
+            <input type="submit" id="bgsignupbtn" value="Sign Up" class="bgscrn btn btn-primary btn-lg"></input>
             <a href="/" id="home"  class="bgscrn btn btn-primary btn-lg" role="button">Home</a>
 
           </center>

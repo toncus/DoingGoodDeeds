@@ -6,8 +6,9 @@ body{
 .good-life__header {
 	text-align: center;
 	background-color: beige;
-	margin: 0;
-	padding-top: 5px;
+	color: navy;
+	margin: 0 5px;
+	padding: 10px 16px;
 }
 
 
@@ -33,25 +34,6 @@ h2 {
 h3 {
 	color: navy
 }
-img {
-  position: absolute;
-  z-index: -1;
-  margin-top: 75px;
-}
-
-.centered {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
-}
-
-.img-fluid {
-	max-width: 100%;
-	height: 100%;
-	margin-bottom: 0;
-}
 
 #hiddencert{display: none;}
 /* End row */
@@ -62,24 +44,35 @@ img {
 }
 
 @media screen and (max-width: 769px) {
-  #cancelbtn,#signupbtn #home {
+  #smsignupbtn #home {
     width: 20%;
    	}
-  #cancelbtn {
+  #smcancelbtn {
     width: 40%;
    	}
    form{
-	max-height: 55%;
+	max-height: 90%;
 	max-width: 100%;
-	margin-top: -100px;
-	margin-bottom: 0;
 	}
 	.bgscrn {
       	display: none;
   	}
   	.smscrn {
     	display: inline-block;
-  	}
+	  }
+	  .content {
+		padding: 16px;
+	  }
+	  
+	  .sticky {
+		position: fixed;
+		top: 0;
+		width: 100%;
+	  }
+	  
+	  .sticky + .content {
+		padding-top: 102px;
+	  }
 }
 @media (min-width: 769px) {
   .bgscrn {
@@ -88,6 +81,10 @@ img {
   .smscrn {
     display:none;
   }
-    #cancelbtn, #signupbtn #home {
+  #bgsignupbtn #home {
     width: 30%;
-   	}
+	}
+  #bgcancelbtn {
+	width: 50%;
+	}
+}
