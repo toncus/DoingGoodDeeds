@@ -7,14 +7,15 @@ body{
 	text-align: center;
 	background-color: beige;
 	color: navy;
-	margin: 0 5px;
+	margin: 0px 5px -30% 5px;
 	padding: 10px 16px;
+	width: 100%;
 }
 
 
 /* Add padding to container elements */
 .container {
-  padding: 40px;
+  padding: 5px;
   text-align: center;
 }
 .container>div {
@@ -51,7 +52,8 @@ h3 {
     width: 40%;
    	}
    form{
-	max-height: 90%;
+	margin-top: 5px;
+	max-height: 100%;
 	max-width: 100%;
 	}
 	.bgscrn {
@@ -71,7 +73,7 @@ h3 {
 	  }
 	  
 	  .sticky + .content {
-		padding-top: 102px;
+		padding-top: 10px;
 	  }
 }
 @media (min-width: 769px) {
