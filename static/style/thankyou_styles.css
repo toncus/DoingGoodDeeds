@@ -2,6 +2,7 @@ body{
   margin: 0;
   padding: 0;
 }
+
 /* Top Banner section */
 .good-life__header {
   text-align: center;
@@ -36,35 +37,9 @@ p {
   font-family: Arial;
   font-weight: bold;
   font-size: 20px;
+  color: navy;
   line-height: 24px;
   text-align: center;
-}
-
-#magickind {
-   color: rgb(128,128,0);
-   font-weight: bold;
-   margin: 5px; 
-   display: inline-block;
-}
-
-.poempanel {
-  text-align: center;
-  background-color: white;
-  color: navy;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: 20%;
-  margin-right: 20%;
-}
-
-.poempanel {
-  text-align: center;
-  background-color: white;
-  color: navy;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .cfloats {
@@ -73,7 +48,6 @@ p {
 }
 
 .column {padding: 25px;}
-* {box-sizing: border-box}
 
 /* Set a style for all buttons */
 button {
@@ -89,3 +63,36 @@ button {
 
 button:hover {
   opacity:1;
+}
+
+@media (min-width: 769px) {
+  .bgscrn {
+    display: inline-block;
+  }
+  .smscrn {
+    display:none;
+  }
+
+@media screen and (max-width: 769px) {
+  .bgscrn {
+      display: none;
+    }
+
+  .smscrn {
+      display: inline-block;
+    }
+    
+  .content {
+    padding: 16px;
+    }
+      
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    }
+    
+  .sticky + .content {
+    padding-top: 10px;
+    }
+  }

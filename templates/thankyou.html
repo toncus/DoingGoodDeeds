@@ -11,38 +11,45 @@
 </head>
 <body>      
   <!–– Top Banner section  -->
-  <nav class="good-life__header">
-    <h2>#THEGOODLIFE = GOOD PEOPLE DOING GOOD DEEDS/THINGS FOR THE GOOD OF ALL</h2>
-  </nav>
+  <div class="bgscrn good-life__header">
+    <center><h2>#THEGOODLIFE = GOOD PEOPLE DOING GOOD DEEDS/THINGS FOR THE GOOD OF ALL</h2></center>
+  </div>
+  <div class="smscrn good-life__header" id="myHeader">
+  </center><h3>#THEGOODLIFE = GOOD PEOPLE DOING GOOD DEEDS/THINGS FOR THE GOOD OF ALL</h3></center>
+  </div>
 
 <!–– Container  -->
 
 <div class="container">
-    <div class="row">
+    <div>
 
 <!–– Row 7 -->
-    <div class="poempanel" class="col-xs-12 col-sm-6 col-md-4" >
-                <center><h1 id="magickind">Thank you for signing up!</h1></center>
-                <img src="\static\assets\THANKYOU.jpg" alt="ThankYou!" height="350" width="350"></br>
+    <div class="content" class="col-xs-12 col-sm-6 col-md-4" >
+                <center><h1>Thank you for signing up!</h1></center>
+                <center><img src="\static\assets\THANKYOU.jpg" alt="ThankYou!" height="350" width="350"></center></br>
 
-                {% if (password1 == password2) %}
-                  <p>Welcome {{fname}}<p>
+                <center><p>Welcome {{fname}} !<p>
 
-                  <p>Thank you so much for signing up!</br></br>
+                  <p>Thank you so much for signing up!</br>
 
                   Your information has been stored in our database.</br></br>
 
                   We will be happy to reach out with any news about future deploys.</br></br>
 
-                  Give yourself a hand for taking a major step in your journey of AWESOMENESS.</br></br>
+                  Give yourself a hand for taking a major step in your journey of AWESOMENESS.</br>
 
                   People like you truly make the world a better place.</br></br>
 
-                  Thank you!</p>
-                {% else %}  
-                  <h1>Passwords don't match</h1>
-                {% endif %}
-                <a href="/" class="btn btn-primary btn-lg" role="button">Home</a>
+                  Thank you!</p></center>
+
+                  <div class="cfloats">
+                    <center>
+                      <a href="/" class="smscrn btn btn-primary" role="button">Home</a>
+          
+                      <a href="/" class="bgscrn btn btn-primary btn-lg" role="button">Home</a>
+          
+                    </center>
+                  </div>
 
     </div>     
    
