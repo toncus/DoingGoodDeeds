@@ -5,11 +5,12 @@ body{
 
 /* Top Banner section */
 .good-life__header {
-  text-align: center;
-  background-color: beige;
-  margin: 0;
-  padding-top: 5px;
-
+	text-align: center;
+	background-color: beige;
+	color: navy;
+	margin: 0px 5px -30% 5px;
+	padding: 10px 16px;
+	width: 100%;
 }
 
 /* Add padding to container elements */
@@ -17,20 +18,28 @@ body{
   padding: 16px;
 }
 
-i {
-  color: rgb(128,128,0);
-}
 
 a {
   color: navy;
   font-weight: bold;
 }
 
+
 h2 {
   color: navy
 }
+
 h3 {
   color: navy
+}
+.poempanel {
+  text-align: center;
+  background-color: white;
+  color: navy;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 p {
@@ -48,51 +57,37 @@ p {
 }
 
 .column {padding: 25px;}
+* {box-sizing: border-box}
 
-/* Set a style for all buttons */
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-}
 
-button:hover {
-  opacity:1;
+
+@media screen and (max-width: 769px) {
+	.bgscrn {
+      	display: none;
+  	}
+  	.smscrn {
+    	display: inline-block;
+	  }
+	  .content {
+		padding: 16px;
+	  }
+	  
+	  .sticky {
+		position: fixed;
+		top: 0;
+		width: 100%;
+	  }
+	  
+	  .sticky + .content {
+		padding-top: 10px;
+	  }
 }
 
 @media (min-width: 769px) {
   .bgscrn {
-    display: inline-block;
+      	display: inline-block;
   }
   .smscrn {
-    display:none;
+    display: none;
   }
-
-@media screen and (max-width: 769px) {
-  .bgscrn {
-      display: none;
-    }
-
-  .smscrn {
-      display: inline-block;
-    }
-    
-  .content {
-    padding: 16px;
-    }
-      
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    }
-    
-  .sticky + .content {
-    padding-top: 10px;
-    }
-  }
+}
